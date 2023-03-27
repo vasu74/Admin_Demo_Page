@@ -20,7 +20,8 @@
         <div class="flex items-center">
           <!-- logo div -->
           <div class="logo">
-            <img class="w-16 lg:w-20" src="vaha logo-01 (1).png" alt="logo" />
+            <img class="w-16 lg:w-20" href="https://vahacreations.com/"
+             src="e9c35aad-7de9-4429-9287-f4adbf593f09-removebg-preview.png" alt="logo" />
           </div>
           <!-- logo div end  -->
           <!-- Navigation -->
@@ -115,7 +116,7 @@
     
     <section class="w-full min-h-screen bg-white flex flex-row ">
       <!-- left pannel   -->
-      <div class="max-h-screen border-r border-gray-200 w-64 py-5 mr-2  overflow-y-auto">
+      <div class="min-h-screen border-r border-gray-200  w-55 lg:w-64 py-5 mr-2  overflow-y-auto">
         
         <!-- button div -->
         <div>
@@ -126,25 +127,25 @@
         <div class="space-y-12 mt-8  flex-row ">
           <div class="flex items-center align-middle pl-4">
             <div class=" text-indigo-700 font-bold text-2xl tracking-wide cursor-pointer">Settings</div>
-            <span  class="ml-20 pt-1 "><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+            <span  class=" ml-10 lg:ml-20 pt-1 "><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
           </div>
           <!--  -->
           <div class="pl-4">
             <div class="mb-4 text-indigo-700 font-medium text-md hover:text-indigo-900 transition cursor-pointer">Your Preference</div>
             <ul class=" mb-8">
-              <li class="flex items-center flex-row text-gray-400 hover:bg-slate-500 hover:text-white  px-2 py-2 rounded-md "> General</li>
-              <li class="flex items-center flex-row text-gray-400  hover:bg-slate-500 transition hover:text-white  px-2 py-2 rounded-md"> Notification</li>
-              <li class="flex items-center flex-row text-gray-400  hover:bg-slate-500 transition hover:text-white  px-2 py-2 rounded-md"> Security</li>
+              <li class="flex items-center flex-row bg-slate-500 text-white my-2 px-2 py-2 rounded-md "> General</li>
+              <li class="flex items-center flex-row text-gray-400  hover:bg-slate-500 transition hover:text-white  my-2  px-2 py-2 rounded-md"> Notification</li>
+              <li class="flex items-center flex-row text-gray-400  hover:bg-slate-500 transition hover:text-white  my-2 px-2 py-2 rounded-md"> Security</li>
             </ul>
 
             <!-- Account Setup  -->
             <div class="mb-4 text-indigo-700 font-medium text-md cursor-pointer">Account Setup</div>
-            <ul class="space-y-4 mb-8">
-              <li class="flex items-center flex-row text-gray-400  hover:bg-slate-500 transition hover:text-white  px-2 py-2 rounded-md">Account Details</li>
-              <li class="flex items-center flex-row text-gray-400  hover:bg-slate-500 transition hover:text-white  px-2 py-2 rounded-md">Users and Teams</li>
-              <li class="flex items-center flex-row text-gray-400  hover:bg-slate-500 transition hover:text-white  px-2 py-2 rounded-md">Integrations</li>
-              <li class="flex items-center flex-row text-gray-400  hover:bg-slate-500 transition hover:text-white  px-2 py-2 rounded-md">Tracking Id</li>
-              <li class="flex items-center flex-row text-gray-400  hover:bg-slate-500 transition hover:text-white  px-2 py-2 rounded-md">Privacy and Conset</li>
+            <ul class="mb-8">
+              <li class="flex items-center flex-row text-gray-400  hover:bg-slate-500 transition hover:text-white  my-2  px-2 py-2 rounded-md">Account Details</li>
+              <li class="flex items-center flex-row text-gray-400  hover:bg-slate-500 transition hover:text-white  my-2  px-2 py-2 rounded-md">Users and Teams</li>
+              <li class="flex items-center flex-row text-gray-400  hover:bg-slate-500 transition hover:text-white  my-2  px-2 py-2 rounded-md">Integrations</li>
+              <li class="flex items-center flex-row text-gray-400  hover:bg-slate-500 transition hover:text-white  my-2  px-2 py-2 rounded-md">Tracking Id</li>
+              <li class="flex items-center flex-row text-gray-400  hover:bg-slate-500 transition hover:text-white  my-2  px-2 py-2 rounded-md">Privacy and Conset</li>
             </ul>
 
             <!-- Account Setup ends-->
@@ -164,7 +165,7 @@
       <!-- left pannel ends -->
 
       <!-- Right Pannel  -->
-          <section class="flex-1  px-4 ">
+          <section class="flex-1 px-3 lg:px-4 mt-6 lg:mt-0 ">
             <!-- header  -->
             <section class="flex justify-between items-center flex-row py-3 flex-1">
               
@@ -186,7 +187,7 @@
             <!-- a second tab  -->
             <div class=" border-solid border-slate-100  px-6 py-6 border-2 mt-6 flex justify-between" >
               <div class="items-center">
-                <label class="text-lg font-medium" for="dog-names">Search an Object: </label>
+                <label class="text-lg font-bold" for="dog-names">Select an Object: </label>
                  <select   class="border-2 border-slate-200 bg-gray-200 px-2 py-2 rounded-md ml-2" name="dog-names" id="dog-names">
                  <option value="rigatoni">Rigatoni</option>
                  <option value="dave">Dave</option>
@@ -236,7 +237,156 @@
             </ul>
             </div>
             <!-- table front tab end  -->
+            <!-- table filter -->
+            
+            <div class="flex justify-between items-center mt-8 lg:mt-5 font-medium">
+              <div class="flex justiy-betweeen items-center">
+                <h3>Filter By:</h3>
+                <ul class="flex items-center justify-between gap-2 lg:gap-4 pl-2 lg:pl-4">
+                  <li>
+                    All Groups <span class="lg:ml-1"
+                    ><i class="fa-sharp fa-solid fa-caret-down"></i></span
+                >
+                  </li>
+                  <li>
+                    All filled Type <span class="lg:ml-1"
+                    ><i class="fa-sharp fa-solid fa-caret-down"></i></span
+                >
+                  </li>
+                  <li>
+                    All Users <span class="lg:ml-1"
+                    ><i class="fa-sharp fa-solid fa-caret-down"></i></span
+                >
+                  </li>
+                </ul>
+              </div>
+              <div class="flex gap-2 lg:gap-4 items-center justify-between">
+            
+            <button class="border-solid px-3 py-2 lg:px-4 lg:py-4 font-medium text-lg bg-slate-200 rounded-md  hover:bg-slate-500 hover:text-white transition">Search Properties<span  class="hidden lg:ml-20 pt-1 "><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span></button>
+                <button class="text-lg text-indigo-700 font-medium hover:text-gray-400 transition cursor-pointer">Create Property</button>
+              </div>
+              
+            </div>
+            <!-- table filter ends -->
             <!-- table start  -->
+            
+             <table class=" w-full border-b border-gray-200 mt-3 lg:mt-4">
+          <thead>
+            <tr class="text-sm font-medium text-gray-700 border-b border-gray-200">
+              <td class="pl-10"> 
+                <div class="flex items-center gap-x-4">
+                  <input
+                    type="checkbox"
+                    class="w-6 h-6 text-indigo-600 rounded-md border-gray-300"
+                    indeterminate="indeterminate"
+                  />
+                  <span>Name</span>
+                </div>
+              </td>
+              <td class="py-4 px-4 text-center">Group</td>
+              <td class="py-4 px-4 text-center">Created By</td>
+              <td class="py-4 px-4 text-center">Used In</td>
+
+
+            </tr>
+          </thead>
+
+          <tbody class="mb-6">
+            
+                <tr class="hover:bg-gray-100 transition-colors group">
+                  <td
+                    class="flex gap-x-4 items-center py-4 pl-10"
+                  
+                  >
+                    <input
+                      type="checkbox"
+                      class="w-6 h-6 text-indigo-600 rounded-md border-gray-300"
+                    />
+                    
+                    <div>
+                      <a
+                        href="#"
+                        class="text-lg font-semibold text-gray-700"
+                      >
+                        About Us
+                      </a>
+                      <div class="font-medium text-gray-400">
+                        Single Line Text
+                      </div>
+                    </div>
+                  </td>
+                  <td class="font-medium text-center">Company Information</td>
+                  <td class="font-medium text-center"><a class="cursor-pointer" href="https://vahacreations.com/">Vaha</a></td>
+                  <td class="text-center">
+                    <span class="font-medium">0</span>
+                    
+                  </td>
+                
+                </tr>
+                <tr class="hover:bg-gray-100 transition-colors group">
+                  <td
+                    class="flex gap-x-4 items-center py-4 pl-10"
+                  
+                  >
+                    <input
+                      type="checkbox"
+                      class="w-6 h-6 text-indigo-600 rounded-md border-gray-300"
+                    />
+                    
+                    <div>
+                      <a
+                        href="#"
+                        class="text-lg font-semibold text-gray-700"
+                      >
+                        Annual Revenue
+                      </a>
+                      <div class="font-medium text-gray-400">
+                        Number
+                      </div>
+                    </div>
+                  </td>
+                  <td class="font-medium text-center">Company Information</td>
+                  <td class="font-medium text-center"><a class="cursor-pointer" href="https://vahacreations.com/">Vaha</a></td>
+                  <td class="text-center">
+                    <span class="font-medium">0</span>
+                    
+                  </td>
+                
+                </tr>
+                <tr class="hover:bg-gray-100 transition-colors group">
+                  <td
+                    class="flex gap-x-4 items-center py-4 pl-10"
+                  
+                  >
+                    <input
+                      type="checkbox"
+                      class="w-6 h-6 text-indigo-600 rounded-md border-gray-300"
+                    />
+                    
+                    <div>
+                      <a
+                        href="#"
+                        class="text-lg font-semibold text-gray-700"
+                      >
+                        Campagaign of last booking in meetings Tools
+                      </a>
+                      <div class="font-medium text-gray-400">
+                        Single Line Text
+                      </div>
+                    </div>
+                  </td>
+                  <td class="font-medium text-center">Company Activity</td>
+                  <td class="font-medium text-center"><a class="cursor-pointer" href="https://vahacreations.com/">Vaha</a></td>
+                  <td class="text-center">
+                    <span class="font-medium">0</span>
+                    
+                  </td>
+                
+                </tr>
+              
+          </tbody>
+        </table>
+            
             <!-- table end  -->
             <!-- header ends  -->
           </section>
