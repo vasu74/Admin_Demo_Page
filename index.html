@@ -1,69 +1,111 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    this script for tailwind.ccss -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- this script is for icons(fontawesome library)-->
     <script
       src="https://kit.fontawesome.com/c3f5e183eb.js"
       crossorigin="anonymous"
     ></script>
+
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
   </head>
-   <body>
+  <body>
     <!-- Header Start -->
-    <header class="bg-slate-800 border-b  text-white ">
+    <header class="bg-slate-800 border-b text-white">
       <!-- main block -->
       <div class="flex items-center justify-between px-3 mx-auto">
         <!-- left hand block  -->
         <div class="flex items-center">
           <!-- logo div -->
           <div class="logo">
-            <img class="w-16 lg:w-20" href="https://vahacreations.com/"
-             src="e9c35aad-7de9-4429-9287-f4adbf593f09-removebg-preview.png" alt="logo" />
+            <a class="cursor-pointer" href="https://vahacreations.com/">
+              <img
+                class="w-16 lg:w-20"
+                src="e9c35aad-7de9-4429-9287-f4adbf593f09-removebg-preview.png"
+                alt="logo"
+              />
+            </a>
           </div>
           <!-- logo div end  -->
           <!-- Navigation -->
           <nav class="">
-            <ul class="flex items-center gap-3" >
+            <ul class="flex items-center gap-3">
               <li class="relative" x-data="{dropdownOpen:false}">
                 <!-- sample active class -->
-                <button href="#" class=" flex items-center outline-none focus:outline-none bg-slate-900 px-2 py-2 transition rounded-md font-medium" id="menu-btn"
-                  >DropDown<span class="ml-1"
-                    ><i class="fa-sharp fa-solid fa-caret-down"></i></span
-                ></button>
+                <button
+                  href="#"
+                  class="flex items-center outline-none focus:outline-none bg-slate-900 px-2 py-2 transition rounded-md font-medium"
+                  id="menu-btn"
+                >
+                  DropDown<span class="ml-1"
+                    ><i class="fa-sharp fa-solid fa-caret-down"></i
+                  ></span>
+                </button>
                 <!-- drop_down_menu -->
-                <div class="md:absolute bg-slate-800 right-0 rounded-md p-1 hidden" 
-                id="dropdown" >
-                  <ul class="space-y-2 " >
+                <div
+                  class="md:absolute bg-slate-800 right-0 rounded-md p-1 hidden"
+                  id="dropdown"
+                >
+                  <ul class="space-y-2">
                     <li>
-                      <a href="#" class="flex p-3 font-medium text-white rounded-md hover:bg-slate-900 transition ">Categories</a>
+                      <a
+                        href="#"
+                        class="flex p-3 font-medium text-white rounded-md hover:bg-slate-900 transition"
+                        >Categories</a
+                      >
                     </li>
                     <li>
-                      <a href="#" class="flex p-2 font-medium text-white rounded-md hover:bg-slate-900 transition">Categories</a>
+                      <a
+                        href="#"
+                        class="flex p-2 font-medium text-white rounded-md hover:bg-slate-900 transition"
+                        >Categories</a
+                      >
                     </li>
                     <li>
-                      <a href="#" class="flex p-2 font-medium text-white rounded-md hover:bg-slate-900 transition">Categories</a>
+                      <a
+                        href="#"
+                        class="flex p-2 font-medium text-white rounded-md hover:bg-slate-900 transition"
+                        >Categories</a
+                      >
                     </li>
                   </ul>
                 </div>
                 <!-- drop_down_menu_ends -->
               </li>
               <li>
-                <a  href="#" class="hover:bg-slate-900 px-2 py-2 rounded-md font-medium"
+                <a
+                  href="#"
+                  class="hover:bg-slate-900 px-2 py-2 rounded-md font-medium"
                   >Option 2<span class="ml-1"
                     ><i class="fa-sharp fa-solid fa-caret-down"></i></span
                 ></a>
               </li>
               <li>
-                <a  href="#" class="hover:bg-slate-900 px-2 py-2 rounded-md font-medium" 
+                <a
+                  href="#"
+                  class="hover:bg-slate-900 px-2 py-2 rounded-md font-medium"
                   >Option 3<span class="ml-1"
                     ><i class="fa-sharp fa-solid fa-caret-down"></i></span
                 ></a>
               </li>
               <li>
-                <a  href="#" class="hover:bg-slate-900 px-2 py-2 rounded-md font-medium"
+                <a
+                  href="#"
+                  class="hover:bg-slate-900 px-2 py-2 rounded-md font-medium"
                   >Option 4<span class="ml-1">
                     <i class="fa-sharp fa-solid fa-caret-down"></i></span
                 ></a>
@@ -110,170 +152,244 @@
       </div>
       <!-- main block end  -->
     </header>
-     <!-- Header End  -->
+    <!-- Header End  -->
 
     <!-- Main section start -->
-    
-    <section class="w-full min-h-screen bg-white flex flex-row ">
+
+    <section class="w-full min-h-screen bg-white flex flex-row">
       <!-- left pannel   -->
-      <div class="min-h-screen border-r border-gray-200  w-55 lg:w-64 py-5 mr-2  overflow-y-auto">
-        
+      <div
+        class="min-h-screen border-r border-gray-200 w-55 lg:w-64 py-5 mr-2 overflow-y-auto"
+      >
         <!-- button div -->
         <div>
-          <button class=" font-medium  text-mg border border-solid border-gray-200 px-4 py-4 border-l-0"><span class="mr-3"><i class="fa-solid fa-arrow-left"></i></span>Back to Companies</button>
+          <button
+            class="font-medium text-mg border border-solid border-gray-200 px-4 py-4 border-l-0"
+          >
+            <span class="mr-3"><i class="fa-solid fa-arrow-left"></i></span>Back
+            to Companies
+          </button>
         </div>
         <!-- button div ends  -->
         <!-- side Bar menu1 -->
-        <div class="space-y-12 mt-8  flex-row ">
+        <div class="space-y-12 mt-8 flex-row">
           <div class="flex items-center align-middle pl-4">
-            <div class=" text-indigo-700 font-bold text-2xl tracking-wide cursor-pointer">Settings</div>
-            <span  class=" ml-10 lg:ml-20 pt-1 "><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+            <div
+              class="text-indigo-700 font-bold text-2xl tracking-wide cursor-pointer"
+            >
+              Settings
+            </div>
+            <span class="ml-10 lg:ml-20 pt-1"
+              ><i class="fa-solid fa-magnifying-glass fa-lg"></i
+            ></span>
           </div>
           <!--  -->
           <div class="pl-4">
-            <div class="mb-4 text-indigo-700 font-medium text-md hover:text-indigo-900 transition cursor-pointer">Your Preference</div>
-            <ul class=" mb-8">
-              <li class="flex items-center flex-row bg-slate-500 text-white my-2 px-2 py-2 rounded-md "> General</li>
-              <li class="flex items-center flex-row text-gray-400  hover:bg-slate-500 transition hover:text-white  my-2  px-2 py-2 rounded-md"> Notification</li>
-              <li class="flex items-center flex-row text-gray-400  hover:bg-slate-500 transition hover:text-white  my-2 px-2 py-2 rounded-md"> Security</li>
+            <div
+              class="mb-4 text-indigo-700 font-medium text-md hover:text-indigo-900 transition cursor-pointer"
+            >
+              Your Preference
+            </div>
+            <ul class="mb-8">
+              <li
+                class="flex items-center flex-row bg-slate-800 text-white my-2 px-2 py-2 rounded-md"
+              >
+                General
+              </li>
+              <li
+                class="flex items-center flex-row text-gray-400 hover:bg-slate-800 hover:text-white transition my-2 px-2 py-2 rounded-md"
+              >
+                Notification
+              </li>
+              <li
+                class="flex items-center flex-row text-gray-400 hover:bg-slate-800 transition hover:text-white my-2 px-2 py-2 rounded-md"
+              >
+                Security
+              </li>
             </ul>
 
             <!-- Account Setup  -->
-            <div class="mb-4 text-indigo-700 font-medium text-md cursor-pointer">Account Setup</div>
+            <div
+              class="mb-4 text-indigo-700 font-medium text-md cursor-pointer"
+            >
+              Account Setup
+            </div>
             <ul class="mb-8">
-              <li class="flex items-center flex-row text-gray-400  hover:bg-slate-500 transition hover:text-white  my-2  px-2 py-2 rounded-md">Account Details</li>
-              <li class="flex items-center flex-row text-gray-400  hover:bg-slate-500 transition hover:text-white  my-2  px-2 py-2 rounded-md">Users and Teams</li>
-              <li class="flex items-center flex-row text-gray-400  hover:bg-slate-500 transition hover:text-white  my-2  px-2 py-2 rounded-md">Integrations</li>
-              <li class="flex items-center flex-row text-gray-400  hover:bg-slate-500 transition hover:text-white  my-2  px-2 py-2 rounded-md">Tracking Id</li>
-              <li class="flex items-center flex-row text-gray-400  hover:bg-slate-500 transition hover:text-white  my-2  px-2 py-2 rounded-md">Privacy and Conset</li>
+              <li
+                class="flex items-center flex-row text-gray-400 hover:bg-slate-800 transition hover:text-white my-2 px-2 py-2 rounded-md"
+              >
+                Account Details
+              </li>
+              <li
+                class="flex items-center flex-row text-gray-400 hover:bg-slate-800 transition hover:text-white my-2 px-2 py-2 rounded-md"
+              >
+                Users and Teams
+              </li>
+              <li
+                class="flex items-center flex-row text-gray-400 hover:bg-slate-800 transition hover:text-white my-2 px-2 py-2 rounded-md"
+              >
+                Integrations
+              </li>
+              <li
+                class="flex items-center flex-row text-gray-400 hover:bg-slate-800 transition hover:text-white my-2 px-2 py-2 rounded-md"
+              >
+                Tracking Id
+              </li>
+              <li
+                class="flex items-center flex-row text-gray-400 hover:bg-slate-800 transition hover:text-white my-2 px-2 py-2 rounded-md"
+              >
+                Privacy and Conset
+              </li>
             </ul>
 
             <!-- Account Setup ends-->
-            
 
             <!-- logout button  -->
-            <div class="mb-8 text-indigo-700 font-medium text-md cursor-pointer">Logout</div>
+            <div
+              class="mb-8 text-indigo-700 font-medium text-md cursor-pointer"
+            >
+              Logout
+            </div>
             <!-- logout button ends  -->
-
           </div>
-         
+
           <!--  -->
         </div>
         <!-- side Bar menu1 ends -->
-
-    </div>
+      </div>
       <!-- left pannel ends -->
 
       <!-- Right Pannel  -->
-          <section class="flex-1 px-3 lg:px-4 mt-6 lg:mt-0 ">
-            <!-- header  -->
-            <section class="flex justify-between items-center flex-row py-3 flex-1">
-              
-              <h3 class="font-medium text-2xl">Properties</h3>
-              <div class="flex gap-4">
-                <button >
-                 Data Safety
-                </button>
-              
-               
-                <button class=" font-medium border-solid border-2 border-slate-500 px-3 py-3 hover:bg-slate-500 hover:text-white transition ">
-                  Export All Categories
-                </button>
-               </div>
-    
-              
-            </section>
-            <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis distinctio doloremque soluta blanditiis commodi a possimus.</p>
-            <!-- a second tab  -->
-            <div class=" border-solid border-slate-100  px-6 py-6 border-2 mt-6 flex justify-between" >
-              <div class="items-center">
-                <label class="text-lg font-bold" for="dog-names">Select an Object: </label>
-                 <select   class="border-2 border-slate-200 bg-gray-200 px-2 py-2 rounded-md ml-2" name="dog-names" id="dog-names">
-                 <option value="rigatoni">Rigatoni</option>
-                 <option value="dave">Dave</option>
-                 <option value="pumpernickel">Pumpernickel</option>
-                 <option value="reeses">Reeses</option>
-                 </select>
-              </div>
-              <button class="text-lg text-indigo-700 font-medium hover:text-gray-400 transition cursor-pointer">
-                Go to Companies Settings
-              </button>
-            </div>
-            <!-- second tab end  -->
+      <section class="flex-1 px-3 lg:px-4 mt-6 lg:mt-0">
+        <!-- header  -->
+        <section class="flex justify-between items-center flex-row py-3 flex-1">
+          <h3 class="font-medium text-2xl">Properties</h3>
+          <div class="flex gap-4">
+            <button>Data Safety</button>
 
-            <!--table front tab   -->
-            <div>
-            <ul class="flex gap-x-24 items-center px-4 border-y border-gray-200">
-              <li class="flex flex-row">
-                <!-- actived one -->
-                <button 
-                  class="flex gap-x-2 items-center py-5 px-6 text-indigo-600 relative group "
-                >
-                 
-                  <span class="font-medium">Properties (89)</span>
-                  <span
-                    class="absolute w-full h-0.5 left-3 bg-indigo-600 rounded bottom-0 scale-x-100 transition-transform ease-in-out"
-                  ></span>
-                </button>
-                <button
-                  class="flex gap-x-2 items-center py-5 px-6 text-gray-500 hover:text-indigo-600 relative group"
-                >
-                 
-                  <span class="font-medium">Groups</span>
-                  <span
-                    class="absolute w-full h-0.5 left-3 bg-indigo-600 rounded bottom-0 scale-x-0 group-hover:scale-x-100 transition-transform ease-in-out"
-                  ></span>
-                </button>
-                <button
-                  class="flex gap-x-2 items-center py-5 px-6 text-gray-500 hover:text-indigo-600 relative group"
-                >
-                 
-                  <span class="font-medium">Archived Groups</span>
-                  <span
-                    class="absolute w-full h-0.5 left-3 bg-indigo-600 rounded bottom-0 scale-x-0 group-hover:scale-x-100 transition-transform ease-in-out"
-                  ></span>
-                </button>
+            <button
+              class="font-medium border-solid border-2 border-slate-700 px-3 py-3 hover:bg-slate-800 hover:text-white transition"
+            >
+              Export All Categories
+            </button>
+          </div>
+        </section>
+        <p class="mt-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          distinctio doloremque soluta blanditiis commodi a possimus.
+        </p>
+        <!-- a second tab  -->
+        <div
+          class="border-solid border-slate-100 px-6 py-6 border-2 mt-6 flex justify-between"
+        >
+          <div class="items-center">
+            <label class="text-lg font-bold" for="dog-names"
+              >Select an Object:
+            </label>
+            <select
+              class="border-2 border-slate-200 bg-gray-200 px-2 py-2 rounded-md ml-2"
+              name="dog-names"
+              id="dog-names"
+            >
+              <option value="rigatoni">Rigatoni</option>
+              <option value="dave">Dave</option>
+              <option value="pumpernickel">Pumpernickel</option>
+              <option value="reeses">Reeses</option>
+            </select>
+          </div>
+          <button
+            class="text-lg text-indigo-700 font-medium hover:text-gray-400 transition cursor-pointer"
+          >
+            Go to Companies Settings
+          </button>
+        </div>
+        <!-- second tab end  -->
+
+        <!--table front tab   -->
+        <div>
+          <ul class="flex gap-x-24 items-center px-4 border-y border-gray-200">
+            <li class="flex flex-row">
+              <!-- actived one -->
+              <button
+                class="flex gap-x-2 items-center py-5 px-6 text-indigo-600 relative group"
+              >
+                <span class="font-medium">Properties (89)</span>
+                <span
+                  class="absolute w-full h-0.5 left-3 bg-indigo-600 rounded bottom-0 scale-x-100 transition-transform ease-in-out"
+                ></span>
+              </button>
+              <button
+                class="flex gap-x-2 items-center py-5 px-6 text-gray-500 hover:text-indigo-600 relative group"
+              >
+                <span class="font-medium">Groups</span>
+                <span
+                  class="absolute w-full h-0.5 left-3 bg-indigo-600 rounded bottom-0 scale-x-0 group-hover:scale-x-100 transition-transform ease-in-out"
+                ></span>
+              </button>
+              <button
+                class="flex gap-x-2 items-center py-5 px-6 text-gray-500 hover:text-indigo-600 relative group"
+              >
+                <span class="font-medium">Archived Groups</span>
+                <span
+                  class="absolute w-full h-0.5 left-3 bg-indigo-600 rounded bottom-0 scale-x-0 group-hover:scale-x-100 transition-transform ease-in-out"
+                ></span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- table front tab end  -->
+        <!-- table filter -->
+
+        <div class="flex justify-between items-center mt-8 lg:mt-5 font-medium">
+          <div class="flex justiy-betweeen items-center">
+            <h3>Filter By:</h3>
+            <ul
+              class="flex items-center justify-between gap-2 lg:gap-4 pl-2 lg:pl-4"
+            >
+              <li>
+                All Groups
+                <span class="lg:ml-1"
+                  ><i class="fa-sharp fa-solid fa-caret-down"></i
+                ></span>
+              </li>
+              <li>
+                All filled Type
+                <span class="lg:ml-1"
+                  ><i class="fa-sharp fa-solid fa-caret-down"></i
+                ></span>
+              </li>
+              <li>
+                All Users
+                <span class="lg:ml-1"
+                  ><i class="fa-sharp fa-solid fa-caret-down"></i
+                ></span>
               </li>
             </ul>
-            </div>
-            <!-- table front tab end  -->
-            <!-- table filter -->
-            
-            <div class="flex justify-between items-center mt-8 lg:mt-5 font-medium">
-              <div class="flex justiy-betweeen items-center">
-                <h3>Filter By:</h3>
-                <ul class="flex items-center justify-between gap-2 lg:gap-4 pl-2 lg:pl-4">
-                  <li>
-                    All Groups <span class="lg:ml-1"
-                    ><i class="fa-sharp fa-solid fa-caret-down"></i></span
-                >
-                  </li>
-                  <li>
-                    All filled Type <span class="lg:ml-1"
-                    ><i class="fa-sharp fa-solid fa-caret-down"></i></span
-                >
-                  </li>
-                  <li>
-                    All Users <span class="lg:ml-1"
-                    ><i class="fa-sharp fa-solid fa-caret-down"></i></span
-                >
-                  </li>
-                </ul>
-              </div>
-              <div class="flex gap-2 lg:gap-4 items-center justify-between">
-            
-            <button class="border-solid px-3 py-2 lg:px-4 lg:py-4 font-medium text-lg bg-slate-200 rounded-md  hover:bg-slate-500 hover:text-white transition">Search Properties<span  class="hidden lg:ml-20 pt-1 "><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span></button>
-                <button class="text-lg text-indigo-700 font-medium hover:text-gray-400 transition cursor-pointer">Create Property</button>
-              </div>
-              
-            </div>
-            <!-- table filter ends -->
-            <!-- table start  -->
-            
-             <table class=" w-full border-b border-gray-200 mt-3 lg:mt-4">
+          </div>
+          <div class="flex gap-2 lg:gap-4 items-center justify-between">
+            <button
+              class="border-solid px-3 py-2 lg:px-4 lg:py-4 font-medium text-white text-lg bg-slate-600 rounded-md hover:bg-slate-500 hover:text-white transition"
+            >
+              Search Properties<span class="hidden lg:ml-20 pt-1"
+                ><i class="fa-sharp fa-solid fa-magnifying-glass"></i
+              ></span>
+            </button>
+            <button
+              class="text-lg text-indigo-700 font-medium hover:text-gray-400 transition cursor-pointer"
+            >
+              Create Property
+            </button>
+          </div>
+        </div>
+        <!-- table filter ends -->
+        <!-- table start  -->
+
+        <table class="w-full border-b border-gray-200 mt-3 lg:mt-4">
           <thead>
-            <tr class="text-sm font-medium text-gray-700 border-b border-gray-200">
-              <td class="pl-10"> 
+            <tr
+              class="text-sm font-medium text-gray-700 border-b border-gray-200"
+            >
+              <td class="pl-10">
                 <div class="flex items-center gap-x-4">
                   <input
                     type="checkbox"
@@ -286,115 +402,92 @@
               <td class="py-4 px-4 text-center">Group</td>
               <td class="py-4 px-4 text-center">Created By</td>
               <td class="py-4 px-4 text-center">Used In</td>
-
-
             </tr>
           </thead>
 
           <tbody class="mb-6">
-            
-                <tr class="hover:bg-gray-100 transition-colors group">
-                  <td
-                    class="flex gap-x-4 items-center py-4 pl-10"
-                  
-                  >
-                    <input
-                      type="checkbox"
-                      class="w-6 h-6 text-indigo-600 rounded-md border-gray-300"
-                    />
-                    
-                    <div>
-                      <a
-                        href="#"
-                        class="text-lg font-semibold text-gray-700"
-                      >
-                        About Us
-                      </a>
-                      <div class="font-medium text-gray-400">
-                        Single Line Text
-                      </div>
-                    </div>
-                  </td>
-                  <td class="font-medium text-center">Company Information</td>
-                  <td class="font-medium text-center"><a class="cursor-pointer" href="https://vahacreations.com/">Vaha</a></td>
-                  <td class="text-center">
-                    <span class="font-medium">0</span>
-                    
-                  </td>
-                
-                </tr>
-                <tr class="hover:bg-gray-100 transition-colors group">
-                  <td
-                    class="flex gap-x-4 items-center py-4 pl-10"
-                  
-                  >
-                    <input
-                      type="checkbox"
-                      class="w-6 h-6 text-indigo-600 rounded-md border-gray-300"
-                    />
-                    
-                    <div>
-                      <a
-                        href="#"
-                        class="text-lg font-semibold text-gray-700"
-                      >
-                        Annual Revenue
-                      </a>
-                      <div class="font-medium text-gray-400">
-                        Number
-                      </div>
-                    </div>
-                  </td>
-                  <td class="font-medium text-center">Company Information</td>
-                  <td class="font-medium text-center"><a class="cursor-pointer" href="https://vahacreations.com/">Vaha</a></td>
-                  <td class="text-center">
-                    <span class="font-medium">0</span>
-                    
-                  </td>
-                
-                </tr>
-                <tr class="hover:bg-gray-100 transition-colors group">
-                  <td
-                    class="flex gap-x-4 items-center py-4 pl-10"
-                  
-                  >
-                    <input
-                      type="checkbox"
-                      class="w-6 h-6 text-indigo-600 rounded-md border-gray-300"
-                    />
-                    
-                    <div>
-                      <a
-                        href="#"
-                        class="text-lg font-semibold text-gray-700"
-                      >
-                        Campagaign of last booking in meetings Tools
-                      </a>
-                      <div class="font-medium text-gray-400">
-                        Single Line Text
-                      </div>
-                    </div>
-                  </td>
-                  <td class="font-medium text-center">Company Activity</td>
-                  <td class="font-medium text-center"><a class="cursor-pointer" href="https://vahacreations.com/">Vaha</a></td>
-                  <td class="text-center">
-                    <span class="font-medium">0</span>
-                    
-                  </td>
-                
-                </tr>
-              
+            <tr class="hover:bg-gray-100 transition-colors group">
+              <td class="flex gap-x-4 items-center py-4 pl-10">
+                <input
+                  type="checkbox"
+                  class="w-6 h-6 text-indigo-600 rounded-md border-gray-300"
+                />
+
+                <div>
+                  <a href="#" class="text-lg font-semibold text-gray-700">
+                    About Us
+                  </a>
+                  <div class="font-medium text-gray-400">Single Line Text</div>
+                </div>
+              </td>
+              <td class="font-medium text-center">Company Information</td>
+              <td class="font-medium text-center">
+                <a class="cursor-pointer" href="https://vahacreations.com/"
+                  >Vaha</a
+                >
+              </td>
+              <td class="text-center">
+                <span class="font-medium">0</span>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-100 transition-colors group">
+              <td class="flex gap-x-4 items-center py-4 pl-10">
+                <input
+                  type="checkbox"
+                  class="w-6 h-6 text-indigo-600 rounded-md border-gray-300"
+                />
+
+                <div>
+                  <a href="#" class="text-lg font-semibold text-gray-700">
+                    Annual Revenue
+                  </a>
+                  <div class="font-medium text-gray-400">Number</div>
+                </div>
+              </td>
+              <td class="font-medium text-center">Company Information</td>
+              <td class="font-medium text-center">
+                <a class="cursor-pointer" href="https://vahacreations.com/"
+                  >Vaha</a
+                >
+              </td>
+              <td class="text-center">
+                <span class="font-medium">0</span>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-100 transition-colors group">
+              <td class="flex gap-x-4 items-center py-4 pl-10">
+                <input
+                  type="checkbox"
+                  class="w-6 h-6 text-indigo-600 rounded-md border-gray-300"
+                />
+
+                <div>
+                  <a href="#" class="text-lg font-semibold text-gray-700">
+                    Campagaign of last booking in meetings Tools
+                  </a>
+                  <div class="font-medium text-gray-400">Single Line Text</div>
+                </div>
+              </td>
+              <td class="font-medium text-center">Company Activity</td>
+              <td class="font-medium text-center">
+                <a class="cursor-pointer" href="https://vahacreations.com/"
+                  >Vaha</a
+                >
+              </td>
+              <td class="text-center">
+                <span class="font-medium">0</span>
+              </td>
+            </tr>
           </tbody>
         </table>
-            
-            <!-- table end  -->
-            <!-- header ends  -->
-          </section>
+
+        <!-- table end  -->
+        <!-- header ends  -->
+      </section>
       <!-- Right pannel ends  -->
     </section>
 
     <!-- Main Section End  -->
-   
   </body>
   <script>
     window.addEventListener("DOMContentLoaded", () => {
@@ -413,4 +506,4 @@
       });
     });
   </script>
-</html> 
+</html>
